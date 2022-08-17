@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+
+  php-fpm:
+    build:
+      context: ./docker/php-fpm
+    volumes:
+      - .:/symfony
+    container_name: php-fpm
+    depends_on:
+      - pgdb
+    links:
+      - pgdb
+
+###> doctrine/doctrine-bundle ###
+  pgdb:
+    image: postgres
+    #restart: always
+    container_name: pgdb
+    environment:
+      POSTGRES_PASSWORD: example
+
+  adminer:
+    image: adminer
+    #restart: always
+    ports:
+      - 8080:8080
+###< doctrine/doctrine-bundle ###
+  nginx:
+    build:
+      context: ./docker/nginx
+    volumes:
+      - .:/symfony
+      - ./var/log:/var/log/nginx/
+    container_name: nginx
+#    restart: always
+    ports:
+      - "80:80"
+
+volumes:
+###> doctrine/doctrine-bundle ###
+  pgdb:
+###< doctrine/doctrine-bundle ###

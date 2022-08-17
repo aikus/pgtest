@@ -1,0 +1,8 @@
+172.21.0.1 - - [17/Aug/2022:01:44:13 +0000] "GET / HTTP/1.1" 404 27 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+172.21.0.1 - - [17/Aug/2022:01:44:13 +0000] "GET /favicon.ico HTTP/1.1" 404 27 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+172.21.0.1 - - [17/Aug/2022:01:45:21 +0000] "GET /index.php HTTP/1.1" 404 27 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+172.21.0.1 - - [17/Aug/2022:01:47:08 +0000] "GET /index.php HTTP/1.1" 200 36 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+172.21.0.1 - - [17/Aug/2022:01:47:08 +0000] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost/index.php" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+172.21.0.1 - - [17/Aug/2022:01:53:13 +0000] "GET /index.php HTTP/1.1" 200 14 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+172.21.0.1 - - [17/Aug/2022:01:58:21 +0000] "GET /index.php HTTP/1.1" 200 198 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+172.21.0.1 - - [17/Aug/2022:01:58:39 +0000] "GET /index.php HTTP/1.1" 200 208 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
